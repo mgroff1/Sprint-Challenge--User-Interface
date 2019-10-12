@@ -193,7 +193,6 @@ button.more{
 button.more:hover{
     transform:scale(1.2);
     transition:transform .85s;
-
 }
 
 .together{
@@ -204,7 +203,6 @@ button.more:hover{
     
     display:flex;
     justify-content:flex-start;
-    /* padding:0px 0 25px 0; */
 }
 
 .footer-nav > nav > a{
@@ -217,16 +215,6 @@ h2{
    font-weight:bold;
 }
 
-a{
-    transform: scale(1);
-    transition:transform .85s;
-    text-decoration:none;
-}
-
-a:hover{
-    transform:scale(1.2);
-    transition:transform .85s;
-}
 
 .middle-content .boxes > div:nth-child(1){
     background:teal;
@@ -259,7 +247,33 @@ a:hover{
     background:dodgerblue;
 }
 
+a{
+    transform: scale(1);
+    transition:transform .85s;
+    text-decoration:none;
+}
 
+a:hover{
+    transform:scale(1.2);
+    transition:transform .85s;
+}
+
+
+.box{
+    perspective:1000;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+    transform: rotateY(0deg);
+}
+
+.box:hover{
+    perspective:1000;
+    transform-style: preserve-3d;
+    transition: all 2.0s linear;
+    transform: rotateY(360deg) scale(1.5);
+    box-shadow:15px 5px 10px 4px gray,-5px -2px 1px -4px gray;
+    /* color:red; */
+}
 
 
 
